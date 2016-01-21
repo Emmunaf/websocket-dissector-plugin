@@ -19,13 +19,6 @@ local vs_pay_len = {
   [126] = "[126] Extended payload length (16 bits)",
   [127] = "[127] Extended payload length (64 bits)"
 }
--- Default value for vs_pay_len
-function setDefault (t, d)
-  local mt = {__index = function () return d end}
-  setmetatable(t, mt)
-end
-setDefault(vs_pay_len, "lenght")
-----
 handshake_complete = 0;
 -- Fields for the client handshake
 local f_rmethod = ProtoField.string("websocket.rmethod", "Request Method")
