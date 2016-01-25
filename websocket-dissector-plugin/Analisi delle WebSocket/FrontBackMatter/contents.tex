@@ -1,0 +1,29 @@
+%*******************************************************
+% Table of Contents
+%*******************************************************
+\pdfbookmark[1]{\contentsname}{tableofcontents}
+
+\setcounter{tocdepth}{2} % <-- 2 includes up to subsections in the ToC
+\setcounter{secnumdepth}{3} % <-- 3 numbers up to subsubsections
+
+\tableofcontents 
+
+  
+%*******************************************************
+% List of Listings
+%******************************************************* 
+\pdfbookmark[1]{\lstlistlistingname}{lol}
+\lstlistoflistings 
+   
+%*******************************************************
+% Acronyms
+%*******************************************************
+\pdfbookmark[1]{Acronimi}{acronyms}
+\chapter*{Acronimi}
+\begin{acronym}[UML]
+    \acro{RFC}{Request For Commit}
+    \acro{API}{Application Programming Interface}
+    \acro{HTTP}{Hypertext Transfer Protocol}
+    \acro{SHA-1}{US Secure Hash Algorithm 1}
+    \acro{UTF-8}{Unicode Transformation Format, 8 bit}
+\end{acronym} 
